@@ -53,14 +53,14 @@ checkCustomerAges(ages);
 
 //Write a program using a while loop that simulates a countdown of lives in a game starting from 5 and prints "You have X lives left" on each loop until it reaches 0.
 
-const countdownOfLives = (points)=>{
-    let point = 1;
-    while(point>=points){
+const countdownOfLives = ()=>{
+    let point = 5;
+    while(point>0){
         console.log(`You have ${point} lives left`);
-        points--;
+        point--;
     }
 }
-countdownOfLives(5);
+countdownOfLives();
 
 //Using a do...while loop, write a program that loops through an array of user feedback and prints each comment until the array is empty.
 
@@ -117,7 +117,7 @@ supportTickets(priorities);
 
 const quizCountdown = (numbers)=>{
     let number = 10;
-    while(number>=numbers){
+    while(number>numbers){
         console.log(`${number}`);
         number--;
     }
